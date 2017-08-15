@@ -22,7 +22,6 @@ var transporter = nodemailer.createTransport({
 
 
 nightmare
-  .viewport(1366, 768)
   .cookies.set({
   url: 'https://linda.medatc.com/v3dp/v3dp/#/',
   name: 'user_id',
@@ -64,8 +63,10 @@ nightmare
   secure: false
 })
   .goto('https://linda.medatc.com/v3dp/v3dp/#/')
+  // .goto('https://mp.weixin.qq.com/wiki?action=doc&id=mp1433401084&t=0.9133076749603928')
+  .viewport(1366, 768)
   .wait(20 * 1000)
-  .use(Screenshot.screenshotSelector('dp.png', '.flex_container_vertical', (err) => {
+  .use(Screenshot.screenshotSelector('dp.png', '#app', (err) => {
     if (err) {
       console.log('error')
       throw err;
@@ -93,7 +94,6 @@ nightmare
         console.log(err);
         return;
       }
-
       console.log('发送成功');
     });
   }))

@@ -23,3 +23,8 @@ node_export_image
 
 ## node导出excel
 * https://github.com/functionscope/Node-Excel-Export/blob/master/example/app.js
+
+## 定时模块（可特定几月几号几分几秒）
+* https://www.npmjs.com/package/node-schedule
+* http://www.cnblogs.com/ajun/p/3548259.html
+* http://www.cnblogs.com/zhongweiv/p/node_schedule.html
