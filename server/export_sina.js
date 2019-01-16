@@ -7,7 +7,7 @@ var transporter = nodemailer.createTransport({
   secureConnection: true,
   auth: {
     user: 'txl910514@sina.com',
-    pass: 'uuu' // 新浪邮箱密码
+    pass: '@Txl910514' // 新浪邮箱密码
 
   }
 });
